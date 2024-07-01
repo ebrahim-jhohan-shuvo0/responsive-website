@@ -6,7 +6,11 @@
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
 }
+
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,6 +18,7 @@ nav{
     height: 50px;
     padding: 0 7%;
     background-color: #121010;
+    z-index: 1000;
 } 
 .logo-img{
     width: 35px;
@@ -85,3 +90,94 @@ ul li a:hover{
 /* navbar complite */
 
 /* header area code strat here */
+.main{
+    margin-top: -35px;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+.main-conteiner{
+    width: 1100px;
+   color: #ded7d7;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main h4{
+    margin-bottom: 25px;
+}
+.main h4 span{
+    background-color: #292626;
+    padding: 3px 5px;
+   border-radius: 4px;
+}
+.main-conteiner h2{
+    margin-bottom: 30px;
+}
+.main-conteiner h1 {
+    margin: 10px 0;
+}
+.main-conteiner h1 span{
+    color:transparent;
+    text-decoration: underline;
+    background: linear-gradient(to right, red , #3b0468);
+    -webkit-background-clip:text ;
+    position: relative;
+
+}
+.main-conteiner h1 span::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 150px;
+    background: linear-gradient(to right, red , #3b0468);
+}
+.main-content p{
+    color: gray;
+}
+.home-btn{
+    display: flex;
+}
+.home-btn h4:first-child{
+    background: linear-gradient(to right, red , #3b0468);
+    padding: 10px 13px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.home-btn h4:last-child{
+    position: relative;
+    background:  linear-gradient(to right, red , #3b0468);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px 13px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 18px;
+    z-index: 5;
+}
+ .home-btn h4:last-child::before{
+    content: '';
+    position: absolute;
+    top: 3;
+    left: 3;
+    width: 130px;
+    height: 35px;
+    background:linear-gradient(to right, red , #3b0468) ;
+
+}
+
+.home-btn h4:last-child::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 132px;
+    height: 35px;
+    background:black ;
+
+} 
