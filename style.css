@@ -142,42 +142,59 @@ ul li a:hover{
 }
 .home-btn{
     display: flex;
+    gap: 35px;
+    margin-top: 20px;
+    font-size: 22px;
 }
-.home-btn h4:first-child{
-    background: linear-gradient(to right, red , #3b0468);
-    padding: 10px 13px;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-.home-btn h4:last-child{
+
+ .home-btn button:first-child{
+    padding: 10px 15px;
+     background: linear-gradient(to right, red , #3b0468);
+     color: #ded7d7;
+     border: none;
+     border-radius: 5px;
+     font-size: 20px;
+ }
+ .home-btn button:last-child{
+     padding: 10px 15px;
+     background: linear-gradient(to right, red , #3b0468);
+     color:transparent;
+     -webkit-background-clip: text; 
+     border: 1px solid  transparent ;
+     border-radius: 15px;
+     font-size: 20px;
+     border-image: linear-gradient(to right, red , #3b0468);
+     border-image-slice:1;
+     cursor: pointer; 
+ }
+ /* .btn {
+    padding: 20px 60px;
+    border: none;
+    outline: none;
     position: relative;
-    background:  linear-gradient(to right, red , #3b0468);
-    -webkit-background-clip: text;
-    color: transparent;
-    padding: 10px 13px;
+    z-index: 1;
     border-radius: 5px;
-    margin-top: 30px;
-    margin-left: 18px;
-    z-index: 5;
-}
- .home-btn h4:last-child::before{
-    content: '';
+    background: linear-gradient(to right ,red, #35003e);
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .btn::before {
+    content: "";
     position: absolute;
-    top: 3;
-    left: 3;
-    width: 130px;
-    height: 35px;
-    background:linear-gradient(to right, red , #3b0468) ;
-
-}
-
-.home-btn h4:last-child::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 132px;
-    height: 35px;
-    background:black ;
-
-} 
+    left: 3px;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    border-radius: 4px;
+    background-color: rgb(238, 228, 228);
+    z-index: -1;
+    transition: 200ms
+  }
+  .btn::after {
+    content: attr(data);
+    font-size: 16px;
+    background: linear-gradient(to left, red, blue);
+    font-size: 20px;
+    color: transparent;
+    -webkit-background-clip: text;
+  } */
